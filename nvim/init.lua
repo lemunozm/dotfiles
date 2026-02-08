@@ -175,9 +175,9 @@ require("lazy").setup(
       lazy = false,
       keys = {
         { "<C-h>", "<Plug>(wintabs_previous)" },
-        { "<C-h>", "<Plug>(wintabs_previous)", mode = "i" },
+        { "<C-h>", "<Esc><Plug>(wintabs_previous)", mode = "i" },
         { "<C-l>", "<Plug>(wintabs_next)" },
-        { "<C-l>", "<Plug>(wintabs_next)", mode = "i" },
+        { "<C-l>", "<Esc><Plug>(wintabs_next)", mode = "i" },
         { "<C-c>", "<Plug>(wintabs_close)" },
         { "<C-t>", "<Plug>(wintabs_undo)" },
         { "<C-n>", "<Plug>(wintabs_move_left)" },

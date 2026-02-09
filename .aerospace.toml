@@ -257,4 +257,13 @@ run = ["layout tiling", "move-node-to-workspace M"]
 
 [[on-window-detected]]
 if.app-id = "com.apple.finder"
-run = ["layout tiling", "move-node-to-workspace F"]
+run = ["layout floating", "move-node-to-workspace F"]
+
+[[on-window-detected]]
+if.app-id = "ru.keepcoder.Telegram"
+run = ["layout tiling", "move-node-to-workspace D"]
+
+[[on-window-detected]]
+if.app-id = "com.hnc.Discord"
+run = ["layout tiling", "move-node-to-workspace D"]
+

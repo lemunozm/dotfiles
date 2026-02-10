@@ -12,9 +12,14 @@ if [ -z "$ZELLIJ_SESSION_NAME" ]; then
   exit 0
 fi
 
-repo_name=$(basename "$(git rev-parse --show-toplevel)")
+folder_name=$(basename "$PWD")
 branch_name=$(git symbolic-ref --short HEAD 2>/dev/null)
 
 if [ -n "$branch_name" ]; then
-  zellij action rename-session "${repo_name} => ${branch_name}" </dev/null >/dev/null 2>&1 &
+  if [ "$branch_name" = "main" ] || [ "$branch_name" = "master" ]; then
+    session_name="$folder_name"
+  else
+    session_name="${folder_name}:${branch_name}"
+  fi
+  zellij action rename-session "$session_name" </dev/null >/dev/null 2>&1 &
 fi

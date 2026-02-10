@@ -39,11 +39,11 @@ layout {
     }
     tab name="Shell" {
         pane split_direction="horizontal" {
-            pane command="claude" start_suspended=false
+            pane
             pane
         }
     }
     tab name="Neovim" {
-        pane command="nvim" start_suspended=false
+        pane
     }
 }

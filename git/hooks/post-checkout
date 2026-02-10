@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Rename the current Zellij session to "repo:branch" on branch checkout.
+# The third argument to post-checkout is 1 for a branch checkout, 0 for a file checkout.
+is_branch_checkout="$3"
+
+if [ "$is_branch_checkout" != "1" ]; then
+  exit 0
+fi
+
+if [ -z "$ZELLIJ_SESSION_NAME" ]; then
+  exit 0
+fi
+
+repo_name=$(basename "$(git rev-parse --show-toplevel)")
+branch_name=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+if [ -n "$branch_name" ]; then
+  zellij action rename-session "${repo_name} => ${branch_name}" </dev/null >/dev/null 2>&1 &
+fi

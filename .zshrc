@@ -92,6 +92,7 @@ SAVEHIST=100000000
 HISTSIZE=100000000
 
 setopt HIST_IGNORE_SPACE
+setopt INC_APPEND_HISTORY
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -147,11 +148,18 @@ alias cabal-ghci="TERM=dumb cabal repl"
 alias neoclean="rm -rf target-neovim"
 alias nvim9="XDG_CONFIG_HOME=$HOME/Repos/terminal-config/nvim_9 $HOME/Repos/nvim-macos/bin/nvim"
 alias packl="pack --no-prompt --log-level=build"
+alias mux="tmuxinator"
 
-# Zellij sessionizer
+# Zellij new session
 zn() {
   local name="${1:-${PWD##*/}}"
   zellij pipe -p sessionizer -n sessionizer-new --args "cwd=$(pwd),name=$name"
+}
+
+# Zellij sessionizer
+tn() {
+  local name="${1:-${PWD##*/}}"
+  tmuxinator default "$name" "$PWD"
 }
 
 # Avoid acceleration for mouse

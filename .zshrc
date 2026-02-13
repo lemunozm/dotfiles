@@ -26,6 +26,9 @@ export PATH="/Users/luis/Repos/flutter/bin:$PATH"
 # Idris2
 export PATH="$HOME/.pack/bin:$PATH"
 
+# Tmux plugin manager: coffee.tmux
+export PATH="$HOME/.local/share/coffee/bin:$PATH"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

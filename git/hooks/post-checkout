@@ -21,5 +21,5 @@ if [ -n "$branch_name" ]; then
   else
     session_name="${folder_name}:${branch_name}"
   fi
-  zellij action rename-session "$session_name" </dev/null >/dev/null 2>&1 &
+  #zellij action rename-session "$session_name" </dev/null >/dev/null 2>&1 &
 fi

@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Deduplicate PATH entries (prevents bloat in tmux)
+typeset -U path
+
 # PATH additions.
 export PATH=$HOME/.local/bin:$PATH
 
@@ -156,10 +159,15 @@ zn() {
   zellij pipe -p sessionizer -n sessionizer-new --args "cwd=$(pwd),name=$name"
 }
 
-# Zellij sessionizer
+# Tmux new session
 tn() {
-  local name="${1:-${PWD##*/}}"
-  tmuxinator start default "$name" "$PWD"
+  local dir="${1:-$PWD}"
+  local name="${dir##*/}"
+  if [[ ! -d "$dir" ]]; then
+    echo "tn: directory not found: $dir" >&2
+    return 1
+  fi
+  tmuxinator start default "$name" "$dir"
 }
 
 # Avoid acceleration for mouse

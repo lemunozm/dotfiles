@@ -159,7 +159,7 @@ zn() {
 # Zellij sessionizer
 tn() {
   local name="${1:-${PWD##*/}}"
-  tmuxinator default "$name" "$PWD"
+  tmuxinator start default "$name" "$PWD"
 }
 
 # Avoid acceleration for mouse

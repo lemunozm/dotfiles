@@ -123,7 +123,7 @@ require("lazy").setup(
         { "<leader>c", "<cmd>NoNeckPain<cr>" },
       },
       opts = {
-        width = 110,
+        width = 120,
         autocmds = {
           enableOnVimEnter = true,
           skipEnteringNoNeckPainBuffer = true,

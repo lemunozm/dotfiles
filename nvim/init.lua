@@ -422,7 +422,7 @@ require("lazy").setup(
         require'nvim-treesitter.configs'.setup(opts)
       end,
     },
-    { "nvim-treesitter/nvim-treesitter-context", opts = {} },
+    { "nvim-treesitter/nvim-treesitter-context", opts = { separator = false } },
     {
       "greggh/claude-code.nvim",
       dependencies = {

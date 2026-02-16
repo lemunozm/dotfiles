@@ -415,13 +415,14 @@ require("lazy").setup(
       lazy = false,
       build = ":TSUpdate",
       opts = {
-        ensure_installed = { "haskell", "solidity" },
+        ensure_installed = { "haskell", "solidity", "rust" },
         highlight = { enable = true, additional_vim_regex_highlighting = false },
       },
       config = function(_, opts)
         require'nvim-treesitter.configs'.setup(opts)
       end,
     },
+    { "nvim-treesitter/nvim-treesitter-context", opts = {} },
     {
       "greggh/claude-code.nvim",
       dependencies = {
@@ -562,9 +563,9 @@ require("lazy").setup(
       end
     },
   },
-  {
+  { -- Lazy options
     install = {
-      missing = false,
+      missing = true,
     },
     ui = {
       border = "rounded",

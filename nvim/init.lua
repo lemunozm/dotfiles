@@ -447,22 +447,22 @@ require("lazy").setup(
       config = function()
         -- Match Alacritty color scheme
         local colors = {
-          [0]  = "#222222", -- black
-          [1]  = "#C6351C", -- red
-          [2]  = "#70A531", -- green
-          [3]  = "#CAAF38", -- yellow
-          [4]  = "#5079AF", -- blue
-          [5]  = "#83678B", -- magenta
-          [6]  = "#46A4A9", -- cyan
-          [7]  = "#DDDED9", -- white
-          [8]  = "#696A66", -- bright black
-          [9]  = "#E25140", -- bright red
-          [10] = "#A9E15E", -- bright green
-          [11] = "#FBEB77", -- bright yellow
-          [12] = "#8DAED4", -- bright blue
-          [13] = "#B795B5", -- bright magenta
-          [14] = "#73E3E6", -- bright cyan
-          [15] = "#F2F1F0", -- bright white
+          [0]  = "#45475a", -- black
+          [1]  = "#f38ba8", -- red
+          [2]  = "#a6e3a1", -- green
+          [3]  = "#f9e2af", -- yellow
+          [4]  = "#89b4fa", -- blue
+          [5]  = "#f5c2e7", -- magenta
+          [6]  = "#94e2d5", -- cyan
+          [7]  = "#bac2de", -- white
+          [8]  = "#585b70", -- bright black
+          [9]  = "#f38ba8", -- bright red
+          [10] = "#a6e3a1", -- bright green
+          [11] = "#f9e2af", -- bright yellow
+          [12] = "#89b4fa", -- bright blue
+          [13] = "#f5c2e7", -- bright magenta
+          [14] = "#94e2d5", -- bright cyan
+          [15] = "#a6adc8", -- bright white
         }
         vim.g.baleia = require("baleia").setup({ colors = colors })
 

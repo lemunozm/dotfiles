@@ -218,4 +218,6 @@ function y() {
 
 . "$HOME/.atuin/bin/env"
 
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
+bindkey '^k' up-line-or-history
+bindkey '^j' down-line-or-history

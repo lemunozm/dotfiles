@@ -424,15 +424,6 @@ require("lazy").setup(
     },
     { "nvim-treesitter/nvim-treesitter-context", opts = { separator = false } },
     {
-      "greggh/claude-code.nvim",
-      dependencies = {
-        "nvim-lua/plenary.nvim", -- Required for git operations
-      },
-      config = function()
-        require("claude-code").setup()
-      end
-    },
-    {
       "gruvw/strudel.nvim",
       build = "npm install",
       config = function()

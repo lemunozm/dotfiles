@@ -19,7 +19,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   swap_used_mb=$(sysctl vm.swapusage 2>/dev/null | grep -oE 'used = [0-9.]+' | grep -oE '[0-9.]+')
   swap_gb=$(awk "BEGIN { printf \"%.1f\", ${swap_used_mb:-0} / 1024 }")
 
-  echo "${used_gb}GB | ${swap_gb}GB"
+  echo "${used_gb}GB|${swap_gb}GB"
 
 elif command -v free &>/dev/null; then
   free -b | awk '

@@ -2,4 +2,11 @@
 name = "custom"
 
 [colors]
-AlertError = "lightskyblue"
+AlertInfo = "#a6e3a1"
+AlertWarn = "#fab387"
+AlertError = "#f38ba8"
+Annotation = "#89b4fa"
+Base = "#ffffff"
+Guidance = "#9399b2"
+Important = "#f38ba8"
+Title = "#89b4fa"

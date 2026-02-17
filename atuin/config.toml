@@ -1,0 +1,21 @@
+enter_accept = true
+
+[stats]
+
+[keys]
+
+[sync]
+records = true
+
+[preview]
+
+[daemon]
+
+[theme]
+name = "custom"
+
+[search]
+
+[tmux]
+
+[ui]

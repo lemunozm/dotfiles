@@ -9,6 +9,7 @@ Configuration files to set up a functional and productive **mouse-free terminal 
 - [nvim](https://neovim.io/): Neovim: the modern vim. Among with the [coc plugin](https://github.com/neoclide/coc.nvim), the best IDE.
   - Configured by [lazy.vim](https://www.lazyvim.org/)
 - [fzf](https://github.com/junegunn/fzf): Used in the terminal and inside of `nvim`, the best way of search for files.
+- [atuin](https://atuin.sh/): For my zsh history
 - [ag](https://github.com/ggreer/the_silver_searcher): The silver searcher. A faster `find` in rust.
 - [ripgrep](https://github.com/BurntSushi/ripgrep): A faster `grep` built in rust.
 - [git-foresta](https://github.com/takaaki-kasai/git-foresta): A prettier and simpler `git log` in the terminal.

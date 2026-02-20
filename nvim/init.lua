@@ -316,8 +316,16 @@ require("lazy").setup(
           root_markers = { "compile_commands.json", ".clangd", ".git" },
         })
 
+        -- Python
+        vim.lsp.config("pyright", {
+          cmd = { "pyright-langserver", "--stdio" },
+          filetypes = { "python" },
+          root_markers = { "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git" },
+          capabilities = capabilities,
+        })
+
         -- Enable all configured LSP servers
-        vim.lsp.enable({ "solidity_ls", "rust_analyzer", "jsonls", "clangd" })
+        vim.lsp.enable({ "solidity_ls", "rust_analyzer", "jsonls", "clangd", "pyright" })
       end
     },
     {

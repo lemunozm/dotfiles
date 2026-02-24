@@ -1,0 +1,9 @@
+- url: tmux-plugins/tmux-sensible
+- url: tmux-plugins/tmux-resurrect
+- url: tmux-plugins/tmux-continuum
+- name: "catppuccin/tmux"
+  url: catppuccin/tmux
+- url: tmux-plugins/tmux-cpu
+- url: tmux-plugins/tmux-battery
+- url: omerxx/tmux-sessionx
+- url: tmux-plugins/tmux-open

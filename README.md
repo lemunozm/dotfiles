@@ -1,5 +1,7 @@
-# terminal-config
+# Dotfiles
 Configuration files to set up a functional and productive **mouse-free terminal environment**
+
+See `configure_with_agent.md` to configure the system with this dotfiles.
 
 ## My setup consist in the following tools with their configuration files:
 - [oh-my-zsh](https://ohmyz.sh/): An easier way to configure your `zsh`.

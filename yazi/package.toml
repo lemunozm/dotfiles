@@ -1,9 +1,0 @@
-[[plugin.deps]]
-use = "yazi-rs/plugins:piper"
-rev = "6c71385"
-hash = "25aee698dd1081001008ce0cb1cc4da3"
-
-[[flavor.deps]]
-use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "ca61658"
-hash = "8eabb4e88096f10905a6df62cfaadbf4"

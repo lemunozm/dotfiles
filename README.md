@@ -17,7 +17,6 @@ See `configure_with_agent.md` to configure the system with this dotfiles.
 - [git-foresta](https://github.com/takaaki-kasai/git-foresta): A prettier and simpler `git log` in the terminal.
 - [exa](https://the.exa.website/): A prettier `ls` and `tree` built in rust.
 - [nvimpager](https://github.com/sindrets/diffview.nvim): Use neovim as pager (instead of less)
-- [yazi](https://yazi-rs.github.io/): File explorer and management
 - [aerospace](https://github.com/nikitabobko/AeroSpace): Window management replacing the default MacOS behavior. Util for associate apps to shortcuts.
 - [karabiner](https://github.com/pqrs-org/Karabiner-Elements): A way to emulate hyper and super-hyper keys (to use in aerospace)
 

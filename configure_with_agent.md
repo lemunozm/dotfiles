@@ -10,7 +10,6 @@ I have a dotfiles repo cloned somewhere on this machine. The file you are readin
 ~/.config/nvimpager    -> <repo>/nvimpager
 ~/.config/tmux         -> <repo>/tmux
 ~/.config/tmuxinator   -> <repo>/tmuxinator
-~/.config/yazi         -> <repo>/yazi
 ~/.config/zellij       -> <repo>/zellij
 ```
 

@@ -256,7 +256,7 @@ if.app-id = "com.apple.finder"
 run = ["layout floating", "move-node-to-workspace F"]
 
 [[on-window-detected]]
-if.app-id = "ru.keepcoder.Telegram"
+if.app-id = "com.tdesktop.Telegram"
 run = ["layout tiling", "move-node-to-workspace E"]
 
 [[on-window-detected]]

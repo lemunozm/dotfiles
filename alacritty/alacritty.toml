@@ -2,6 +2,7 @@
 # - 'man 5 alacritty'
 # check https://alacritty.org/config-alacritty.html
 
+[general]
 import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 [colors]
@@ -226,3 +227,4 @@ startup_mode = "Maximized"
 [window.dimensions]
 columns = 90
 lines = 30
+

@@ -8,14 +8,16 @@ See `configure_with_agent.md` to configure the system with this dotfiles.
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k): The best way of configure your prompt.
 - [alacritty](https://alacritty.org/): A multiplatform terminal configurable by a config file, perfect to setup the same configuration among different machines.
 - [tmux](https://github.com/tmux/tmux): Give you the terminal sessions, windows and panels you need for organizing all your workflows.
-- [nvim](https://neovim.io/): Neovim: the modern vim. Among with the [coc plugin](https://github.com/neoclide/coc.nvim), the best IDE.
+  - Plugin manager: [coffee](https://github.com/PraaneshSelvaraj/coffee.tmux)
+  - Layouts: [tmuxinator](https://github.com/tmuxinator/tmuxinator)
+- [nvim](https://neovim.io/): Neovim: the modern vim.
   - Configured by [lazy.vim](https://www.lazyvim.org/)
 - [fzf](https://github.com/junegunn/fzf): Used in the terminal and inside of `nvim`, the best way of search for files.
 - [atuin](https://atuin.sh/): For my zsh history
 - [ag](https://github.com/ggreer/the_silver_searcher): The silver searcher. A faster `find` in rust.
 - [ripgrep](https://github.com/BurntSushi/ripgrep): A faster `grep` built in rust.
 - [git-foresta](https://github.com/takaaki-kasai/git-foresta): A prettier and simpler `git log` in the terminal.
-- [exa](https://the.exa.website/): A prettier `ls` and `tree` built in rust.
+- [eza](https://github.com/eza-community/eza): A prettier `ls` and `tree` built in rust (maintained fork of exa).
 - [nvimpager](https://github.com/sindrets/diffview.nvim): Use neovim as pager (instead of less)
 - [aerospace](https://github.com/nikitabobko/AeroSpace): Window management replacing the default MacOS behavior. Util for associate apps to shortcuts.
 - [karabiner](https://github.com/pqrs-org/Karabiner-Elements): A way to emulate hyper and super-hyper keys (to use in aerospace)

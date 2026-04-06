@@ -1,4 +1,5 @@
 enter_accept = false
+search_mode = "daemon-fuzzy"
 
 [stats]
 
@@ -10,6 +11,8 @@ records = true
 [preview]
 
 [daemon]
+enabled = true
+autostart = true
 
 [theme]
 name = "custom"

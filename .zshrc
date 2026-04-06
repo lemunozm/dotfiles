@@ -13,6 +13,7 @@ typeset -U path
 
 # PATH additions.
 export PATH=$HOME/.local/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -144,11 +145,11 @@ fi
 alias gitf="git-foresta --style=10 | less -ERSX"
 alias gitfa="git-foresta --all --style=10 | less -ERSX"
 
-alias exa="exa --group-directories-first"
-alias ls="exa"
-alias la="exa -la"
-alias ll="exa -l"
-alias tree="exa --tree"
+export EZA_COLORS="di=1;38;2;137;180;250"
+alias ls="eza --group-directories-first"
+alias la="eza -la --group-directories-first"
+alias ll="eza -l --group-directories-first"
+alias tree="eza --tree --group-directories-first"
 alias ghci="TERM=dumb ghci"
 alias cabal-ghci="TERM=dumb cabal repl"
 alias neoclean="rm -rf target-neovim"

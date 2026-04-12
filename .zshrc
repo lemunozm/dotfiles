@@ -174,9 +174,6 @@ tn() {
   tmuxinator start default "$name" "$dir"
 }
 
-# Avoid acceleration for mouse
-defaults write .GlobalPreferences com.apple.mouse.scaling -1
-
 # Avoid generating .DS_Store files on Mac
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 

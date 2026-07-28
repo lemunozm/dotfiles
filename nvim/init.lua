@@ -281,6 +281,27 @@ require("lazy").setup(
         })
 
         -- Rust
+        -- Use bevy_lint instead of clippy when the project depends on Bevy,
+        -- otherwise fall back to clippy. Detected from the nearest Cargo.lock.
+        local function rust_check()
+          local cargo_lock = vim.fs.find("Cargo.lock", { upward = true, path = vim.fn.getcwd() })[1]
+          if cargo_lock then
+            for line in io.lines(cargo_lock) do
+              if line == 'name = "bevy"' then
+                return {
+                  overrideCommand = {
+                    "bevy_lint",
+                    "--workspace",
+                    "--message-format=json",
+                    "--all-targets",
+                  },
+                }
+              end
+            end
+          end
+          return { command = "clippy" }
+        end
+
         vim.lsp.config("rust_analyzer", {
           cmd = { "rust-analyzer" },
           filetypes = { "rust" },
@@ -289,9 +310,7 @@ require("lazy").setup(
           settings = {
             ["rust-analyzer"] = {
               checkOnSave = true,
-              check = {
-                command = "clippy",
-              },
+              check = rust_check(),
               inlayHints = {
                 typeHints = { enable = true },
                 parameterHints = { enable = true },

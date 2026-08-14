@@ -6,6 +6,11 @@
 	ff = only
 [fetch]
     prune = true
+[rerere]
+	enabled = true
+	# Replay recorded resolutions, but keep the path unmerged so it must be
+	# `git add`ed on purpose. Guards against stale resolutions slipping through.
+	autoUpdate = false
 [core]
     editor = nvim
 	pager = nvimpager -p

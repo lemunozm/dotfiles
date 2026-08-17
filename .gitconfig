@@ -14,7 +14,8 @@
 [core]
     editor = nvim
 	pager = nvimpager -p
-	excludesFile = ~/.gitignore
+	# No excludesFile: git reads ~/.config/git/ignore by default, and
+	# ~/.config/git is symlinked to this repo's git/ directory.
 	hooksPath = ~/.config/git/hooks
 [commit]
 	gpgSign = true

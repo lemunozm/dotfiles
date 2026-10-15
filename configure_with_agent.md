@@ -22,4 +22,9 @@ I have a dotfiles repo cloned somewhere on this machine. The file you are readin
 ~/.tmux.conf -> <repo>/tmux/tmux.conf
 ```
 
+**Symlinks in `~/.claude/` (files only, the rest of the directory is local state):**
+```
+~/.claude/CLAUDE.md -> <repo>/claude/CLAUDE.md
+```
+
 Before creating each symlink, if the target already exists and is not a symlink, back it up by renaming it with a `.bak` suffix. Then confirm all symlinks were created successfully with `ls -la ~/.config/ | grep <repo_name>` and `ls -la ~/ | grep <repo_name>`.
